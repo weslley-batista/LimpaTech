@@ -30,6 +30,7 @@ export default function GestorLayout({ children }: GestorLayoutProps) {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 navigateTo(item.id as any);
               }}
               className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
